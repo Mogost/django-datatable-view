@@ -1,5 +1,3 @@
-# -*- encoding: utf-8 -*-
-
 from .testcase import DatatableViewTestCase
 from .test_app import models
 from .. import utils

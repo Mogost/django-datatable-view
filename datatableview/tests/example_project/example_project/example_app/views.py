@@ -1,5 +1,3 @@
-# -*- encoding: utf-8 -*-
-
 from os import sep
 import os.path
 import re
@@ -1039,7 +1037,7 @@ class MultipleTablesDatatableView(DemoMixin, DatatableView):
         context['blog_datatable'] = self.get_datatable(type="demo3")
         return context
 
-    implementation = u'''
+    implementation = '''
     from .models import Entry, Blog
     class MultipleTablesDatatableView(DatatableView):
         # Demo #1 and Demo # 2 will use variations of the same options
@@ -1163,7 +1161,7 @@ class EmbeddedTableDatatableView(DemoMixin, TemplateView):
         context['datatable'] = datatable
         return context
 
-    implementation = u'''
+    implementation = '''
     class EmbeddedTableDatatableView(TemplateView):
         def get_context_data(self, **kwargs):
             context = super(EmbeddedTableDatatableView, self).get_context_data(**kwargs)

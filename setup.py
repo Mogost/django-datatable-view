@@ -1,4 +1,3 @@
-# -*- encoding: utf-8 -*-
 """setup.py: Django django-datatable-view-compat"""
 
 from setuptools import setup, find_packages
