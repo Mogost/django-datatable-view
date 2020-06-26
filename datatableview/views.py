@@ -1,5 +1,3 @@
-# -*- encoding: utf-8 -*-
-
 import datetime
 import json
 import logging
@@ -539,7 +537,7 @@ class DatatableMixin(MultipleObjectMixin):
         if len(values) == 1:
             value = values[0]
         else:
-            value = u' '.join(map(str, values))
+            value = ' '.join(map(str, values))
 
         return value, value
 

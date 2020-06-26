@@ -1,4 +1,3 @@
-# -*- encoding: utf-8 -*-
 from distutils.version import StrictVersion
 
 from django import get_version, template

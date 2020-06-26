@@ -1,5 +1,3 @@
-# -*- encoding: utf-8 -*-
-
 import json
 
 from django.urls import reverse

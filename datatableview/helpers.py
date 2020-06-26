@@ -1,5 +1,3 @@
-# -*- encoding: utf-8 -*-
-
 """
 A collection of small helper functions for generating small pieces of datatable output in custom
 methods on a view.
