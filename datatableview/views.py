@@ -12,7 +12,7 @@ from django.conf import settings
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Manager, Model, Q
 from django.http import HttpResponse, HttpResponseBadRequest
-from django.utils.encoding import force_text
+from django.utils.encoding import force_str
 from django.utils.text import smart_split
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.views.generic.list import ListView, MultipleObjectMixin
@@ -492,11 +492,11 @@ class DatatableMixin(MultipleObjectMixin):
             return True, getattr(self, callback)
 
         # Treat the 'nice name' as the starting point for looking up a method
-        name = force_text(column.pretty_name, errors="ignore")
+        name = force_str(column.pretty_name, errors="ignore")
         if not name:
             name = column.fields[0]
 
-        mangled_name = re.sub(r'[\W_]+', '_', force_text(name))
+        mangled_name = re.sub(r'[\W_]+', '_', force_str(name))
 
         f = getattr(self, 'get_column_%s_data' % mangled_name, None)
         if f:
