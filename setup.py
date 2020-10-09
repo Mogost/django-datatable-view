@@ -10,7 +10,7 @@ except (IOError, ImportError, OSError):
 
 setup(
     name='django-datatable-view-compat',
-    version='0.8.4',
+    version='0.8.5',
     description='This package is used in conjunction with the jQuery plugin '
                 '(http://http://datatables.net/), and supports state-saving detection'
                 ' with (http://datatables.net/plug-ins/api).  The package consists of '
