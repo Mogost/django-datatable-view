@@ -2,8 +2,8 @@ from collections import UserDict, defaultdict, namedtuple
 from functools import reduce
 
 from django.conf import settings
+from django.core.exceptions import FieldDoesNotExist
 from django.db import models
-from django.db.models.fields import FieldDoesNotExist
 from django.forms.utils import flatatt
 from django.template.loader import render_to_string
 
